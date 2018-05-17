@@ -173,6 +173,8 @@
   input:disabled + .input__box + span {
     opacity: .5;
   }
+
+  /* TODO: use generic calculated values */
   &.input--cross {
     .input__box {
       &:before {
