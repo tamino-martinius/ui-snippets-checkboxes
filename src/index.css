@@ -271,6 +271,9 @@
       &:after {
         width: calc(var(--input-size) - 2px);
       }
+      &:before {
+        transition-delay: .15s;
+      }
     }
   }
 }
