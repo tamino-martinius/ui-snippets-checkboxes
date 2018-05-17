@@ -46,7 +46,7 @@
 @each $theme in light, dark {
   .theme-$(theme) {
     --input-color: var(--theme-$(theme)--color-default);
-    --input-color-line: var(--theme-$(theme)--color-line-default);
+    --input-color--line: var(--theme-$(theme)--color-line-default);
     --input-color--default: var(--theme-$(theme)--color-default);
     --input-color--bg: var(--theme-$(theme)--color-bg);
     --input-color--font: var(--theme-$(theme)--color-font);
