@@ -278,7 +278,12 @@
   }
 }
 
-/* pen design */
+/* general design */
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
 article {
   font-family: 'Gotham Rounded SSm A', 'Gotham Rounded SSm B', 'Gotham Rounded A', 'Gotham Rounded B', 'proxima-nova-soft', Verdana, Geneva, sans-serif;
   color: var(--input-color--font);
