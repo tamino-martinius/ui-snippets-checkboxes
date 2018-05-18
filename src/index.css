@@ -89,30 +89,6 @@
   vertical-align: calc((var(--input-size--default) - var(--input-size)) / 2 - var(--input-size--default) / 4);
   transition: .1s background-color ease;
   transition-delay: .05s;
-  &:before {
-    transition: .05s width linear;
-    transition-delay: .1s;
-    --rotation: 45deg;
-    --translate-top: 4px;
-    --translate-left: 3px;
-  }
-  &:after {
-    transition: .1s width linear;
-    transition-delay: 0s;
-    --rotation: -45deg;
-    --translate-top: -2px;
-    --translate-left: 8px;
-  }
-  &:before, &:after {
-    content: '';
-    position: absolute;
-    transform-origin: 0% 100%;
-    width: 0px;
-    border-bottom-color: var(--input-color--line);
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    transform: rotate(var(--rotation)) translateX(var(--translate-top)) translateY(var(--translate-left));
-  }
 }
 
 @keyframes wobble {
@@ -147,6 +123,30 @@
   .input__box {
     border-radius: calc(var(--input-size) * .266);
     opacity: 0.9;
+    &:before {
+      transition: .05s width linear;
+      transition-delay: .1s;
+      --rotation: 45deg;
+      --translate-top: 4px;
+      --translate-left: 3px;
+    }
+    &:after {
+      transition: .1s width linear;
+      transition-delay: 0s;
+      --rotation: -45deg;
+      --translate-top: -2px;
+      --translate-left: 8px;
+    }
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      transform-origin: 0% 100%;
+      width: 0px;
+      border-bottom-color: var(--input-color--line);
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      transform: rotate(var(--rotation)) translateX(var(--translate-top)) translateY(var(--translate-left));
+    }
   }
   label {
     cursor: pointer;
